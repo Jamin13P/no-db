@@ -1,6 +1,5 @@
-const players = [
+const stats = [
     {
-        id: 1,
         name: "Health",
         maxRank: "Platinum III",
         maxMMR:  3509,
@@ -11,7 +10,6 @@ const players = [
         winPercent: 54.17,
     },
     {
-        id: 2,
         name: "Blood Orchid",
         maxRank: "Platinmu II",
         maxMMR:  3809,
@@ -22,7 +20,6 @@ const players = [
         winPercent: 53.77,
     },
     {
-        id: 3,
         name: "White Noise",
         maxRank: "Diamond",
         maxMMR:  4726,
@@ -33,7 +30,6 @@ const players = [
         winPercent: 65.43,
     },
     {
-        id: 4,
         name: "Para Bellum",
         maxRank: "Platinum II",
         maxMMR:  4015,
@@ -44,7 +40,6 @@ const players = [
         winPercent: 57.89,
     },
     {
-        id: 5,
         name: "Grim Sky",
         maxRank: "Platinum II",
         maxMMR:  3923,
@@ -55,7 +50,6 @@ const players = [
         winPercent: 66.15,
     },
     {
-        id: 6,
         name: "Wind Bastion",
         maxRank: "Diamond",
         maxMMR:  4508,
@@ -66,7 +60,6 @@ const players = [
         winPercent: 81.25,
     },
     {
-        id: 7,
         name: "Burnt Horizon",
         maxRank: "Platinum III",
         maxMMR:  3395,
@@ -77,3 +70,4 @@ const players = [
         winPercent: 56.82,
     },
 ]
+module.exports = stats

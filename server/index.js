@@ -10,7 +10,7 @@ app.use(express.json());
 app.get("/api/untracked-players", untrackedCtrl.getAllPlayers);
 
 // Tracked players endpoints
-app.get("/api.tracked-players", trackedCtrl.getTrackedPlayers);
+app.get("/api/tracked-players", trackedCtrl.getTrackedPlayers);
 app.post("/api/tracked-players", trackedCtrl.trackPlayer);
 app.put("/api/tracked-players/:player_id", trackedCtrl.editPlayer);
 app.delete("/api/tracked-players/:player_id", trackedCtrl.deletePlayer);
