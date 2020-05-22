@@ -30,9 +30,9 @@
 - App.js (stateful: hold added players in the stat tracker, this.state.seasonsAdded)
     - Header.js (functional)
     - Option.js (stateful: axios request to fetch all 7 players)
-        - Chooser.js (stateful: this.state.clickedChooser)
+        - Chooser.js (stateful: this.state.selectedChooser)
     - Tracker.js (functional)
-        - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.gamesPlayed, this.state.gamesWon, this.state.gamesLost, this.state.gamesAbandoned this.state.winPercent this.state.editing)
+        - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.matches, this.state.wins, this.state.losses, this.state.abandons this.state.winPercent this.state.editing)
 
 ### Wireframe
 <img src="./screenshots/Capture3.PNG"/>
