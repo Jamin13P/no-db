@@ -20,7 +20,7 @@
 - The stat tracker will update the array when a player is deleted
 
 ### Endpoints
-- GET - fetch all 7 Players from 
+- GET - fetch all 7 Players from data.js (send it to front and back)
 - GET - fetch our stat tracker
 - POST - push user added playeres into the stat tracker
 - PUT - change a player's information in the stat tracker
