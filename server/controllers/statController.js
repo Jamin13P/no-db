@@ -1,4 +1,4 @@
-const stats = [
+const players = [
     {
         id: 1,
         name: "Health",
