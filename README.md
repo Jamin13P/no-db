@@ -34,4 +34,6 @@
         - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.kills, this.state.deaths, this.state.assists, this.state.kD this.state.gamesWon, this.state.gamesLost, this.state.winRatio this.state.editing)
 
 ### Wireframe
+<img src="./>screenshots/Capture3.PNG"/>
+<img src="./screenshots/Capture2.PNG"/>
 <img src="./screenshots/Capture1.PNG"/>
