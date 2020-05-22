@@ -74,5 +74,5 @@ data = [
         losses: 18,
         abandons: 1,
         winPercent: 56.82,
-    }
+    },
 ]
