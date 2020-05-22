@@ -1,4 +1,4 @@
-data = [
+const stats = [
     {
         id: 1,
         name: "Health",
@@ -8,7 +8,8 @@ data = [
         wins: 78,
         losses: 65,
         abandons: 1,
-        winPercent: 54.17,},
+        winPercent: 54.17,
+    },
     {
         id: 2,
         name: "Blood Orchid",
