@@ -11,7 +11,7 @@
     - PUT: edit the information of the player
     - DELETE: delete the player from my array
 
-# Functionality
+### Functionality
 - I want a header at the top of the page to display the name of my app
 - I will be able to add a player into the stat tracker
 - The stat tracker will show the players in the array, and any that get added
@@ -19,13 +19,13 @@
 - The stat tracker will have a delete button
 - The stat tracker will update the array when a player is deleted
 
-# Endpoints
+### Endpoints
 - GET - fetch our stat tracker
 - POST - push user added playeres into the stat tracker
 - PUT - change a player's information in the stat tracker
 - DELETE - delete a player from the stat tracker
 
-# Component Architecture
+### Component Architecture
 - App.js (stateful: hold added players in the stat tracker, this.state.seasonsAdded)
     - Header.js (functional)
     - Option.js (stateful: )
