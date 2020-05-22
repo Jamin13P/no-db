@@ -1,7 +1,10 @@
 import React, { Component } from "react";
+import Header from "./components/Header"
+import Option from "./components/Option"
+import Tracker from "./components/Tracker"
 import "./App.css";
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
 
@@ -22,8 +25,12 @@ class App extends Component {
   deletePlayer(id){}
 
   render() {
-    return <div className="App"></div>;
+    return (
+      <div className="App">
+        App.js
+        <Header />
+        <Option trackPlayer={this.trackPlayer} />
+      </div>
+    )
   }
 }
-
-export default App;
