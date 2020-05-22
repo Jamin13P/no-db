@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "./components/Header"
-import Option from "./components/Option"
-import Tracker from "./components/Tracker"
+import Header from "./components/Header";
+import Option from "./components/Option";
+import Tracker from "./components/Tracker";
 import "./App.css";
 
 export default class App extends Component {
@@ -9,20 +9,30 @@ export default class App extends Component {
     super();
 
     this.state = {
-      trackedPlayers: []
-    }
-    this.trackPlayer = this.trackPlayer.bind(this)
-    this.editPlayer = this.editPlayer.bind(this)
-    this.deletePlayer = this.deletePlayer.bind(this)
+      trackedPlayers: [],
+    };
+    this.trackPlayer = this.trackPlayer.bind(this);
+    this.editPlayer = this.editPlayer.bind(this);
+    this.removePlayer = this.removePlayer.bind(this);
   }
 
-  componentDidMount(){}
+  componentDidMount() {}
 
-  trackPlayer(){}
+  trackPlayer() {}
 
-  editPlayer(id, newName, newMaxRank, newMaxMMR, newMatches, newWins, newLosses, newAbandons, newWinPercent){}
+  editPlayer(
+    id,
+    newName,
+    newMaxRank,
+    newMaxMMR,
+    newMatches,
+    newWins,
+    newLosses,
+    newAbandons,
+    newWinPercent
+  ) {}
 
-  deletePlayer(id){}
+  removePlayer(id) {}
 
   render() {
     return (
@@ -30,7 +40,12 @@ export default class App extends Component {
         App.js
         <Header />
         <Option trackPlayer={this.trackPlayer} />
+        <Tracker
+          trackedPlayers={this.state.trackedPlayers}
+          editPlayer={this.editPlayer}
+          removePlayer={this.removePlayer}
+        />
       </div>
-    )
+    );
   }
 }
