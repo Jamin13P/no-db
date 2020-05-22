@@ -31,7 +31,7 @@
     - Option.js (stateful: )
         - Chooser.js (stateful: )
     - Tracker.js (functional)
-        - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.kills, this.state.deaths, this.state.assists, this.state.kD this.state.gamesWon, this.state.gamesLost, this.state.winRatio this.state.editing)
+        - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.gamesPlayed, this.state.gamesWon, this.state.gamesLost, this.state.gamesAbandoned this.state.winPercent this.state.editing)
 
 ### Wireframe
 <img src="./screenshots/Capture3.PNG"/>
