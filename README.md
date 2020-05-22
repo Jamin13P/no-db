@@ -20,6 +20,7 @@
 - The stat tracker will update the array when a player is deleted
 
 ### Endpoints
+- GET - fetch all 7 Players from 
 - GET - fetch our stat tracker
 - POST - push user added playeres into the stat tracker
 - PUT - change a player's information in the stat tracker
@@ -28,8 +29,8 @@
 ### Component Architecture
 - App.js (stateful: hold added players in the stat tracker, this.state.seasonsAdded)
     - Header.js (functional)
-    - Option.js (stateful: )
-        - Chooser.js (stateful: )
+    - Option.js (stateful: axios request to fetch all players)
+        - Chooser.js (stateful: this.state.clickedChooser)
     - Tracker.js (functional)
         - Player.js (stateful: this.state.name, this.state.maxRank, this.state.maxMMR, this.state.gamesPlayed, this.state.gamesWon, this.state.gamesLost, this.state.gamesAbandoned this.state.winPercent this.state.editing)
 
