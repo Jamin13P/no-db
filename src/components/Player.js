@@ -23,7 +23,16 @@ export default class Player extends Component{
 
     render(){
         return(
-            <div>Player.js</div>
+            <div >
+                <p>{this.props.data.name}</p>
+                <p>{this.props.data.maxRank}</p>
+                <p>{this.props.data.maxMMR}</p>
+                <p>{this.props.data.matches}</p>
+                <p>{this.props.data.wins}</p>
+                <p>{this.props.data.losses}</p>
+                <p>{this.props.data.abandons}</p>
+                <p>{this.props.data.winPercent}</p>
+            </div>
         )
     }
 }

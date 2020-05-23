@@ -1,30 +1,41 @@
-import React, {Component} from "react"
-import Chooser from "./Chooser"
-import axios from "axios"
+import React, { Component } from "react";
+import Chooser from "./Chooser";
+import axios from "axios";
 
-export default class Option extends Component{
-    constructor(){
-        super()
+export default class Option extends Component {
+  constructor() {
+    super();
 
-        this.state = {
-            untrackedPlayers: []
-        } 
-    }
+    this.state = {
+      untrackedPlayers: [],
+    };
+  }
 
-    componentDidMount(){
-        axios.get("/api/untracked-players").then(res =>{
-            this.setState({
-                untrackedPlayers: res.data
-            })
-        })
-    }
+  componentDidMount() {
+    axios.get("/api/untracked-players")
+    .then((res) => {
+      this.setState({
+        untrackedPlayers: res.data,
+      });
+    })
+    .catch(err => {console.log(err)})
+  }
 
-    render(){
-        return(
-            <div>
-                Option.js
-                <Chooser trackPlayer={this.props.trackPlayer} />
-            </div>
-        )
-    }
+  render() {
+    const playerMap = this.state.untrackedPlayers.map((elem) => (
+      <Chooser key={elem.id} trackPlayer={this.props.trackPlayer} data={elem} />
+    ));
+
+    return (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          fontSize: 28,
+        }}
+      >
+        {playerMap}
+      </div>
+    );
+  }
 }

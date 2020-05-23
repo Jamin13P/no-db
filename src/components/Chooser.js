@@ -1,20 +1,19 @@
-import React, {Component} from "react"
+import React, { Component } from "react";
 
+export default class Chooser extends Component {
+  constructor() {
+    super();
 
-export default class Chooser extends Component{
-    constructor(){
-        super()
+    this.state = {
+      selectedChooser: false,
+    };
+  }
 
-        this.state = {
-            selectedChooser: false
-        }
-    }
+  checkChooser() {
+      
+  }
 
-    checkChooser(){}
-
-    render(){
-        return (
-            <div>Chooser.js</div>
-        )
-    }
+  render() {
+    return <div>{this.props.data.name}</div>;
+  }
 }
