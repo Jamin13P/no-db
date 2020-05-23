@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import Chooser from "./Chooser"
+import axios from "axios"
 
 export default class Option extends Component{
     constructor(){
@@ -10,7 +11,13 @@ export default class Option extends Component{
         } 
     }
 
-    componentDidMount(){}
+    componentDidMount(){
+        axios.get("/api/untracked-players").then(res =>{
+            this.setState({
+                untrackedPlayers: res.data
+            })
+        })
+    }
 
     render(){
         return(

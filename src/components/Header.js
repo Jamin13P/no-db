@@ -2,7 +2,7 @@ import React from "react"
 
 function Header(props){
     return (
-        <header>Header.js</header>
+        <header><h1>Rainbow Six Siege Tracker</h1></header>
     )
 }
 
