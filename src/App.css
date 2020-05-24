@@ -2,11 +2,21 @@
   text-align: center;
 }
 
-.table {
+.control,
+.tracked-players
+{
   display: flex;
-  justify-content: space-around;
 }
 
+.control-name,
+.control-rank,
+.control-mmr,
+.control-matches,
+.control-wins,
+.control-losses,
+.control-abandons,
+.control-win-percent,
+.control-buttons,
 .name,
 .rank,
 .mmr,
@@ -14,7 +24,22 @@
 .wins,
 .losses,
 .abandons,
-.win-percent
+.win-percent,
+.buttons
 {
   border: solid black 1px;
+  height: 10vh;
+
+}
+
+.control-name,
+.name
+{
+  width: 200px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

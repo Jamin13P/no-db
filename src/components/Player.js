@@ -25,7 +25,7 @@ export default class Player extends Component {
 
   render() {
     return (
-      <div className="table">
+      <div className="tracked-players">
         <div className="name">
           <p>{this.props.data.name}</p>
         </div>
@@ -49,6 +49,10 @@ export default class Player extends Component {
         </div>
         <div className="win-percent">
           <p>{this.props.data.winPercent}</p>
+        </div>
+        <div className="buttons">
+          <button className="edit">Edit</button>
+          <button className="remove">Remove</button>
         </div>
       </div>
     );

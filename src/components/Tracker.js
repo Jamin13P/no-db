@@ -13,13 +13,37 @@ function Tracker(props) {
   return (
     <div style={{ fontSize: 20 }}>
       <h1>Tracker</h1>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-        }}
-      >
+      <div>
+        <button className="add">Add New Player</button>
+        <section className="control">
+          <div className="control-name">
+            <p>Name</p>
+          </div>
+          <div className="control-rank">
+            <p>Max Rank</p>
+          </div>
+          <div className="control-mmr">
+            <p>Max MMR</p>
+          </div>
+          <div className="control-matches">
+            <p>Matches</p>
+          </div>
+          <div className="control-wins">
+            <p>Wins</p>
+          </div>
+          <div className="control-losses">
+            <p>Losses</p>
+          </div>
+          <div className="control-abandons">
+            <p>abandons</p>
+          </div>
+          <div className="control-win-percent">
+            <p>Win%</p>
+          </div>
+          <div className="control-buttons">
+            <p>Edit/Remove</p>
+          </div>
+        </section>
         {playerMap}
       </div>
     </div>
