@@ -15,7 +15,6 @@ export default class Player extends Component {
       winsInput: data.wins,
       lossesInput: data.losses,
       abandonsInput: data.abandons,
-      winPercentInput: data.winPercent,
     };
   }
 
@@ -67,12 +66,6 @@ export default class Player extends Component {
     });
   }
 
-  handleWinPercentChange(e) {
-    this.setState({
-      winPercentInput: e.target.value,
-    });
-  }
-
   saveEditPlayer() {
     const { data } = this.props;
     const ts = this.state;
@@ -84,8 +77,7 @@ export default class Player extends Component {
       ts.matchesInput,
       ts.winsInput,
       ts.lossesInput,
-      ts.abandonsInput,
-      ts.winPercentInput
+      ts.abandonsInput
     );
     this.toggleEdit();
   }
@@ -173,17 +165,6 @@ export default class Player extends Component {
               className="abandons-input"
               onChange={(e) => this.handleAbandonsChange(e)}
               value={this.state.abandonsInput}
-            />
-          )}
-        </div>
-        <div className="win-percent">
-          {!this.state.editor ? (
-            <p>{this.state.winPercentInput}</p>
-          ) : (
-            <input
-              className="win-percent-input"
-              onChange={(e) => this.handleWinPercentChange(e)}
-              value={this.state.winPercentInput}
             />
           )}
         </div>

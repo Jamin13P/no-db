@@ -29,7 +29,6 @@
 .control-wins,
 .control-losses,
 .control-abandons,
-.control-win-percent,
 .control-buttons {
   background-color: grey;
 }
@@ -41,7 +40,6 @@
 .control-wins,
 .control-losses,
 .control-abandons,
-.control-win-percent,
 .control-buttons,
 .name,
 .rank,
@@ -50,7 +48,6 @@
 .wins,
 .losses,
 .abandons,
-.win-percent,
 .buttons {
   border: solid black 1px;
 }
@@ -90,11 +87,6 @@
   width: 100px;
 }
 
-.control-win-percent,
-.win-percent {
-  width: 60px;
-}
-
 .control-buttons,
 .buttons {
   width: 130px;
@@ -106,8 +98,7 @@
 .matches-input,
 .wins-input,
 .losses-input,
-.abandons-input,
-.win-percent-input {
+.abandons-input {
   width: 75%;
 }
 

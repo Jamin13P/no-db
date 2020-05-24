@@ -8,7 +8,6 @@ const stats = [
     wins: 78,
     losses: 65,
     abandons: 1,
-    winPercent: 54.17,
   },
   {
     id: 2,
@@ -19,7 +18,6 @@ const stats = [
     wins: 57,
     losses: 48,
     abandons: 1,
-    winPercent: 53.77,
   },
   {
     id: 3,
@@ -30,7 +28,6 @@ const stats = [
     wins: 53,
     losses: 28,
     abandons: 0,
-    winPercent: 65.43,
   },
   {
     id: 4,
@@ -41,7 +38,6 @@ const stats = [
     wins: 66,
     losses: 46,
     abandons: 2,
-    winPercent: 57.89,
   },
   {
     id: 5,
@@ -52,7 +48,6 @@ const stats = [
     wins: 43,
     losses: 22,
     abandons: 0,
-    winPercent: 66.15,
   },
   {
     id: 6,
@@ -63,7 +58,6 @@ const stats = [
     wins: 26,
     losses: 6,
     abandons: 0,
-    winPercent: 81.25,
   },
   {
     id: 7,
@@ -74,7 +68,6 @@ const stats = [
     wins: 25,
     losses: 18,
     abandons: 1,
-    winPercent: 56.82,
   },
 ];
 module.exports = stats;

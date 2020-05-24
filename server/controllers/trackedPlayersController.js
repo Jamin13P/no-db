@@ -8,7 +8,6 @@ const players = [
     wins: 30,
     losses: 28,
     abandons: 0,
-    winPercent: 51.72,
   },
 ];
 let id = 1;

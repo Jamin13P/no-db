@@ -36,9 +36,6 @@ function Tracker(props) {
           <div className="control-abandons">
             <p>Abandons</p>
           </div>
-          <div className="control-win-percent">
-            <p>Win%</p>
-          </div>
           <div className="control-buttons">
             <p>Edit/Remove</p>
           </div>
