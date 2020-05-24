@@ -66,6 +66,8 @@ export default class Player extends Component {
     });
   }
 
+  addNewPlayer(){}
+
   saveEditPlayer() {
     const { data } = this.props;
     const ts = this.state;

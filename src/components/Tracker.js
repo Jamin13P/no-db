@@ -13,6 +13,7 @@ function Tracker(props) {
   return (
     <div className="tracker" style={{ fontSize: 20 }}>
       <h1>Tracker</h1>
+      <button>Add New Player</button>
       <div className="table">
         <section className="control">
           <div className="control-name">
