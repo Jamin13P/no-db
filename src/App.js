@@ -96,13 +96,16 @@ export default class App extends Component {
   }
 
   removePlayer(id) {
-    axios.delete(`/api/tracked-players/${id}`)
-    .then(res => {
-      this.setState({
-        trackedPlayers: res.data
+    axios
+      .delete(`/api/tracked-players/${id}`)
+      .then((res) => {
+        this.setState({
+          trackedPlayers: res.data,
+        });
       })
-    })
-    .catch(err => {console.log(err)})
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   render() {

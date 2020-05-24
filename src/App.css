@@ -12,19 +12,15 @@
 }
 
 .control,
-.tracked-players
-{
+.tracked-players {
   display: flex;
 }
 
 .control,
-.tracked-players
-{
+.tracked-players {
   height: 70px;
   display: flex;
 }
-
-
 
 .control-name,
 .control-rank,
@@ -34,8 +30,7 @@
 .control-losses,
 .control-abandons,
 .control-win-percent,
-.control-buttons
-{
+.control-buttons {
   background-color: grey;
 }
 
@@ -56,59 +51,52 @@
 .losses,
 .abandons,
 .win-percent,
-.buttons
-{
+.buttons {
   border: solid black 1px;
 }
 
 .control-name,
-.name
-{
+.name {
   width: 130px;
 }
 
 .control-rank,
-.rank
-{
+.rank {
   width: 120px;
 }
 
 .control-mmr,
-.mmr{
+.mmr {
   width: 110px;
 }
 
 .control-matches,
-.matches
-{
+.matches {
   width: 90px;
 }
 
 .control-wins,
-.wins{
+.wins {
   width: 60px;
 }
 
 .control-losses,
-.losses{
+.losses {
   width: 75px;
 }
 
 .control-abandons,
-.abandons
-{
+.abandons {
   width: 100px;
 }
 
 .control-win-percent,
-.win-percent
-{
+.win-percent {
   width: 60px;
 }
 
 .control-buttons,
-.buttons
-{
+.buttons {
   width: 130px;
 }
 
@@ -119,8 +107,7 @@
 .wins-input,
 .losses-input,
 .abandons-input,
-.win-percent-input
-{
+.win-percent-input {
   width: 75%;
 }
 
@@ -132,13 +119,11 @@
 }
 
 .remove,
-.cancel
-{
+.cancel {
   width: 70px;
 }
 
 .edit,
-.save
-{
+.save {
   width: 45px;
 }

@@ -1,7 +1,7 @@
-const stats = require("./statController")
+const stats = require("./statController");
 
 module.exports = {
-    getAllPlayers: (req, res) => {
-        res.status(200).send(stats)
-    }
-}
+  getAllPlayers: (req, res) => {
+    res.status(200).send(stats);
+  },
+};

@@ -12,13 +12,16 @@ export default class Option extends Component {
   }
 
   componentDidMount() {
-    axios.get("/api/untracked-players")
-    .then((res) => {
-      this.setState({
-        untrackedPlayers: res.data,
+    axios
+      .get("/api/untracked-players")
+      .then((res) => {
+        this.setState({
+          untrackedPlayers: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
       });
-    })
-    .catch(err => {console.log(err)})
   }
 
   render() {
