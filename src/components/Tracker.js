@@ -11,9 +11,9 @@ function Tracker(props) {
     />
   ));
   return (
-    <div style={{ fontSize: 20 }}>
+    <div className="tracker" style={{ fontSize: 20 }}>
       <h1>Tracker</h1>
-      <div>
+      <div className="table">
         <section className="control">
           <div className="control-name">
             <p>Name</p>
@@ -34,7 +34,7 @@ function Tracker(props) {
             <p>Losses</p>
           </div>
           <div className="control-abandons">
-            <p>abandons</p>
+            <p>Abandons</p>
           </div>
           <div className="control-win-percent">
             <p>Win%</p>

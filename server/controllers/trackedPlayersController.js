@@ -1,4 +1,4 @@
-const players = [{id: 0, name: "Dalton", maxRank: "Platinm III", maxMMR: 3257, matches: 58, wins: 36, losses: 22, abandons: 0, winPercent: 62.07}];
+const players = [{id: 0, name: "Dalton", maxRank: "Platinum III", maxMMR: 3257, matches: 58, wins: 30, losses: 28, abandons: 0, winPercent: 51.72}];
 let id = 1;
 
 module.exports = {

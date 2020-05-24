@@ -1,11 +1,42 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .control,
 .tracked-players
 {
   display: flex;
+}
+
+.control,
+.tracked-players
+{
+  height: 70px;
+  display: flex;
+}
+
+
+
+.control-name,
+.control-rank,
+.control-mmr,
+.control-matches,
+.control-wins,
+.control-losses,
+.control-abandons,
+.control-win-percent,
+.control-buttons
+{
+  background-color: grey;
 }
 
 .control-name,
@@ -33,11 +64,81 @@
 .control-name,
 .name
 {
-  width: 200px;
+  width: 130px;
+}
+
+.control-rank,
+.rank
+{
+  width: 120px;
+}
+
+.control-mmr,
+.mmr{
+  width: 110px;
+}
+
+.control-matches,
+.matches
+{
+  width: 90px;
+}
+
+.control-wins,
+.wins{
+  width: 60px;
+}
+
+.control-losses,
+.losses{
+  width: 75px;
+}
+
+.control-abandons,
+.abandons
+{
+  width: 100px;
+}
+
+.control-win-percent,
+.win-percent
+{
+  width: 60px;
+}
+
+.control-buttons,
+.buttons
+{
+  width: 130px;
+}
+
+.name-input,
+.rank-input,
+.mmr-input,
+.matches-input,
+.wins-input,
+.losses-input,
+.abandons-input,
+.win-percent-input
+{
+  width: 75%;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+}
+
+.remove,
+.cancel
+{
+  width: 70px;
+}
+
+.edit,
+.save
+{
+  width: 45px;
 }

@@ -4,7 +4,7 @@ export default class Player extends Component {
   constructor(props) {
     super(props);
 
-    const {data} = this.props
+    const { data } = this.props;
 
     this.state = {
       editor: false,
@@ -15,102 +15,200 @@ export default class Player extends Component {
       winsInput: data.wins,
       lossesInput: data.losses,
       abandonsInput: data.abandons,
-      winPercentInput: data.winPercent
+      winPercentInput: data.winPercent,
     };
   }
 
   toggleEdit() {
     this.setState({
-      editor: !this.state.editor
-    })
+      editor: !this.state.editor,
+    });
   }
 
   handleNameChange(e) {
     this.setState({
-      nameInput: e.target.value
-    })
+      nameInput: e.target.value,
+    });
   }
 
   handleMaxRankChange(e) {
     this.setState({
-      maxRankInput: e.target.value
-    })
+      maxRankInput: e.target.value,
+    });
   }
 
   handleMaxMMRChange(e) {
     this.setState({
-      maxMMRInput: e.target.value
-    })
+      maxMMRInput: e.target.value,
+    });
   }
 
   handleMatchesChange(e) {
     this.setState({
-      matchesInput: e.target.value
-    })
+      matchesInput: e.target.value,
+    });
   }
 
   handleWinsChange(e) {
     this.setState({
-      winsInput: e.target.value
-    })
+      winsInput: e.target.value,
+    });
   }
 
   handleLossesChange(e) {
     this.setState({
-      lossesInput: e.target.value
-    })
+      lossesInput: e.target.value,
+    });
   }
 
   handleAbandonsChange(e) {
     this.setState({
-      abandonsInput: e.target.value
-    })
+      abandonsInput: e.target.value,
+    });
   }
 
   handleWinPercentChange(e) {
     this.setState({
-      winPercentInput: e.target.value
-    })
+      winPercentInput: e.target.value,
+    });
   }
 
   saveEditPlayer() {
-    const {data} = this.props
-    const ts = this.state
-    this.props.editPlayer(data.id, ts.nameInput, ts.maxRankInput, ts.maxMMRInput, ts.matchesInput, ts.winsInput, ts.lossesInput, ts.abandonsInput, ts.winPercentInput)
-    this.toggleEdit()
+    const { data } = this.props;
+    const ts = this.state;
+    this.props.editPlayer(
+      data.id,
+      ts.nameInput,
+      ts.maxRankInput,
+      ts.maxMMRInput,
+      ts.matchesInput,
+      ts.winsInput,
+      ts.lossesInput,
+      ts.abandonsInput,
+      ts.winPercentInput
+    );
+    this.toggleEdit();
   }
 
   render() {
-    const {data} = this.props
+    const { data } = this.props;
     return (
       <div className="tracked-players">
         <div className="name">
-          {!this.state.editor ? <p>{this.state.nameInput}</p> : <input onChange={e => this.handleNameChange(e)} value={this.state.nameInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.nameInput}</p>
+          ) : (
+            <input
+              className="name-input"
+              onChange={(e) => this.handleNameChange(e)}
+              value={this.state.nameInput}
+            />
+          )}
         </div>
         <div className="rank">
-          {!this.state.editor ? <p>{this.state.maxRankInput}</p> : <input onChange={e => this.handleMaxRankChange(e)} value={this.state.maxRankInput}/>}
+          {!this.state.editor ? (
+            <p>{this.state.maxRankInput}</p>
+          ) : (
+            <input
+              className="rank-input"
+              onChange={(e) => this.handleMaxRankChange(e)}
+              value={this.state.maxRankInput}
+            />
+          )}
         </div>
         <div className="mmr">
-    {!this.state.editor ? <p>{this.state.maxMMRInput}</p> : <input onChange={e => this.handleMaxMMRChange(e)} value={this.state.maxMMRInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.maxMMRInput}</p>
+          ) : (
+            <input
+              type="number"
+              className="mmr-input"
+              onChange={(e) => this.handleMaxMMRChange(e)}
+              value={this.state.maxMMRInput}
+            />
+          )}
         </div>
         <div className="matches">
-          {!this.state.editor ? <p>{this.state.matchesInput}</p> : <input onChange={e => this.handleMatchesChange(e)} value={this.state.matchesInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.matchesInput}</p>
+          ) : (
+            <input
+              type="number"
+              className="matches-input"
+              onChange={(e) => this.handleMatchesChange(e)}
+              value={this.state.matchesInput}
+            />
+          )}
         </div>
         <div className="wins">
-          {!this.state.editor ? <p>{this.state.winsInput}</p> : <input onChange={e => this.handleWinsChange(e)} value={this.state.winsInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.winsInput}</p>
+          ) : (
+            <input
+              type="number"
+              className="wins-input"
+              onChange={(e) => this.handleWinsChange(e)}
+              value={this.state.winsInput}
+            />
+          )}
         </div>
         <div className="losses">
-          {!this.state.editor ? <p>{this.state.lossesInput}</p> : <input onChange={e => this.handleLossesChange(e)} value={this.state.lossesInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.lossesInput}</p>
+          ) : (
+            <input
+              type="number"
+              className="losses-input"
+              onChange={(e) => this.handleLossesChange(e)}
+              value={this.state.lossesInput}
+            />
+          )}
         </div>
         <div className="abandons">
-          {!this.state.editor ? <p>{this.state.abandonsInput}</p> : <input onChange={e => this.handleAbandonsChange(e)} value={this.state.abandonsInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.abandonsInput}</p>
+          ) : (
+            <input
+              type="number"
+              className="abandons-input"
+              onChange={(e) => this.handleAbandonsChange(e)}
+              value={this.state.abandonsInput}
+            />
+          )}
         </div>
         <div className="win-percent">
-          {!this.state.editor ? <p>{this.state.winPercentInput}</p> : <input onChange={e => this.handleWinPercentChange(e)} value={this.state.winPercentInput} />}
+          {!this.state.editor ? (
+            <p>{this.state.winPercentInput}</p>
+          ) : (
+            <input
+              className="win-percent-input"
+              onChange={(e) => this.handleWinPercentChange(e)}
+              value={this.state.winPercentInput}
+            />
+          )}
         </div>
         <div className="buttons">
-          {!this.state.editor ? <button className="edit" onClick={() => this.toggleEdit()}>Edit</button> : <button onClick={() => this.saveEditPlayer()}>Save</button>}
-          {!this.state.editor ? <button className="remove" onClick={() => this.props.removePlayer(data.id)}>Remove</button> : <button onClick={() => this.toggleEdit()}>Cancel</button>}
+          {!this.state.editor ? (
+            <button className="edit" onClick={() => this.toggleEdit()}>
+              Edit
+            </button>
+          ) : (
+            <button className="save" onClick={() => this.saveEditPlayer()}>
+              Save
+            </button>
+          )}
+          {!this.state.editor ? (
+            <button
+              className="remove"
+              onClick={() => this.props.removePlayer(data.id)}
+            >
+              Remove
+            </button>
+          ) : (
+            <button className="cancel" onClick={() => this.toggleEdit()}>
+              Cancel
+            </button>
+          )}
         </div>
       </div>
     );
