@@ -24,35 +24,36 @@ export default class Player extends Component {
   saveNewInfo() {}
 
   render() {
+    const {data} = this.props
     return (
       <div className="tracked-players">
         <div className="name">
-          <p>{this.props.data.name}</p>
+          <p>{data.name}</p>
         </div>
         <div className="rank">
-          <p>{this.props.data.maxRank}</p>
+          <p>{data.maxRank}</p>
         </div>
         <div className="mmr">
-          <p>{this.props.data.maxMMR}</p>
+          <p>{data.maxMMR}</p>
         </div>
         <div className="matches">
-          <p>{this.props.data.matches}</p>
+          <p>{data.matches}</p>
         </div>
         <div className="wins">
-          <p>{this.props.data.wins}</p>
+          <p>{data.wins}</p>
         </div>
         <div className="losses">
-          <p>{this.props.data.losses}</p>
+          <p>{data.losses}</p>
         </div>
         <div className="abandons">
-          <p>{this.props.data.abandons}</p>
+          <p>{data.abandons}</p>
         </div>
         <div className="win-percent">
-          <p>{this.props.data.winPercent}</p>
+          <p>{data.winPercent}</p>
         </div>
         <div className="buttons">
-          <button className="edit">Edit</button>
-          <button className="remove">Remove</button>
+          <button className="edit" onClick={() => this.toggleEdit()}>Edit</button>
+          <button className="remove" onClick={() => this.props.removePlayer(data.id)}>Remove</button>
         </div>
       </div>
     );
