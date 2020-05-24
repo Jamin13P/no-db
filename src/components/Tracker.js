@@ -14,7 +14,6 @@ function Tracker(props) {
     <div style={{ fontSize: 20 }}>
       <h1>Tracker</h1>
       <div>
-        <button className="add">Add New Player</button>
         <section className="control">
           <div className="control-name">
             <p>Name</p>
